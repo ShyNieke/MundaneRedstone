@@ -6,6 +6,7 @@ import com.svennieke.MundaneRedstone.config.MundaneConfigGen;
 import com.svennieke.MundaneRedstone.init.ModBlocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -25,6 +26,9 @@ public class BlockMundaneRedstone extends Block{
 		this.setRegistryName(registry);
 		this.setUnlocalizedName(unlocalised);
 		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setHardness(3.0F);
+		this.setResistance(5.0F);
+		this.setSoundType(SoundType.STONE);
 	}
 
 	@Override

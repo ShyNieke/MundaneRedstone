@@ -15,7 +15,7 @@ public class ModBlocks {
 	
 	public static void init()
 	{
-		Mundane_Redstone_Ore = new BlockMundaneRedstone("redstone_ore", "redstone_ore");
+		Mundane_Redstone_Ore = new BlockMundaneRedstone("redstone_ore", "oreRedstone");
 	}
 	
 	public static void register()
