@@ -23,8 +23,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = Reference.MOD_ID, 
 	name = Reference.MOD_NAME, 
 	version = Reference.VERSION, 
-	acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
-	
+	acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS,
+	dependencies = "after:*")
+
 public class MundaneRedstone {
 	
 	@Instance(Reference.MOD_ID)
