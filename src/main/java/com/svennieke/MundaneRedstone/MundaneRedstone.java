@@ -19,13 +19,13 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Reference.MOD_ID, 
 	name = Reference.MOD_NAME, 
 	version = Reference.VERSION, 
 	acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS,
 	dependencies = "after:geolosys")
-	
 	
 public class MundaneRedstone {
 	
@@ -49,7 +49,9 @@ public class MundaneRedstone {
 		
 		logger.info("Registering Mundane Redstone Ore Block");
 		ModBlocks.register();
-
+		
+		OreDictionary.registerOre("oreRedstone", ModBlocks.Mundane_Redstone_Ore);
+		
 		logger.info("Register Furnace Recipe Mundane Redstone Ore Block");
 		ModRecipes.Init();
 		

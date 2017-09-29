@@ -31,7 +31,6 @@ public class ModBlocks {
 	public static void registerBlock(Block block, ItemBlock item) 
 	{
 		ForgeRegistries.BLOCKS.register(block);
-		OreDictionary.registerOre("oreRedstone", block);
 		item.setRegistryName(block.getRegistryName());
 		ForgeRegistries.ITEMS.register(item);
 	}
