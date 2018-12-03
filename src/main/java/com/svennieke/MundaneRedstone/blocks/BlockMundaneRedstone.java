@@ -19,7 +19,6 @@ import net.minecraft.world.World;
 
 public class BlockMundaneRedstone extends Block{
 	
-	
 	public BlockMundaneRedstone(String registry, String unlocalised) 
 	{
 		super(Material.ROCK);
@@ -29,6 +28,7 @@ public class BlockMundaneRedstone extends Block{
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
 		this.setSoundType(SoundType.STONE);
+		this.setHarvestLevel("pickaxe", 2);
 	}
 
 	@Override
