@@ -1,12 +1,12 @@
 {
   "required": true,
-  "minVersion": "0.8",
+  "minVersion": "0.8.4",
+  "compatibilityLevel": "JAVA_16",
   "package": "com.shynieke.mundaneredstone.mixin",
   "refmap": "mundaneredstone.refmap.json",
   "target": "@env(DEFAULT)",
-  "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "RedstoneOreBlockMixin"
+    "RedStoneOreBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
