@@ -16,12 +16,6 @@ Replacing Vanilla Redstone ore with non-shiny redstone since 2017
 [[dependencies.mundaneredstone]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.18,1.19)"
-ordering="NONE"
-side="BOTH"
-[[dependencies.mundaneredstone]]
-modId="forge"
-mandatory=true
-versionRange="[38.0.6,40)"
+versionRange="[1.18.2,1.19)"
 ordering="NONE"
 side="BOTH"
