@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[38,)"
+loaderVersion="[41,)"
 issueTrackerURL="https://github.com/ShyNieke/MundaneRedstone/issues"
 license="MIT"
 
@@ -16,6 +16,6 @@ Replacing Vanilla Redstone ore with non-shiny redstone since 2017
 [[dependencies.mundaneredstone]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.18,1.19)"
+versionRange="[1.19,1.20)"
 ordering="NONE"
 side="BOTH"

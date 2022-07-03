@@ -21,18 +21,18 @@ public class RedStoneOreBlockMixin extends Block {
 		super(properties);
 	}
 
-	@Inject(at = @At("HEAD"), method = "interact", cancellable=true)
-	private static void interact(BlockState state, Level world, BlockPos pos, CallbackInfo info) {
+	@Inject(at = @At("HEAD"), method = "interact", cancellable = true)
+	private static void interact(BlockState state, Level level, BlockPos pos, CallbackInfo info) {
 		info.cancel();
 	}
 
-	@Inject(at = @At("HEAD"), method = "use", cancellable=true)
-	public void use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult rayTraceResult, CallbackInfoReturnable<InteractionResult> info) {
+	@Inject(at = @At("HEAD"), method = "use", cancellable = true)
+	public void use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult blockHitResult, CallbackInfoReturnable<InteractionResult> info) {
 		info.setReturnValue(InteractionResult.PASS);
 	}
 
-	@Inject(at = @At("HEAD"), method = "spawnParticles", cancellable=true)
-	private static void spawnParticles(Level world, BlockPos pos, CallbackInfo info) {
+	@Inject(at = @At("HEAD"), method = "spawnParticles", cancellable = true)
+	private static void spawnParticles(Level level, BlockPos pos, CallbackInfo info) {
 		info.cancel();
 	}
 }
