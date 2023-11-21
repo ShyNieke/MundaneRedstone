@@ -1,3 +1,6 @@
+[![build](https://github.com/ShyNieke/MundaneRedstone/actions/workflows/build.yml/badge.svg)](https://github.com/ShyNieke/MundaneRedstone/actions/workflows/build.yml) 
+[![](http://cf.way2muchnoise.eu/versions/273930.svg)](https://www.curseforge.com/minecraft/mc-mods/mundane-redstone-ore)
+
 # Mundane Redstone Ore #
 
 ## About ##
@@ -9,4 +12,4 @@ Replacing Vanilla Redstone ore with non-shiny redstone since 2017
   - [![License](https://img.shields.io/badge/License-MIT-red.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 ## Downloads ##
-Downloads can be found on CurseForge at https://minecraft.curseforge.com/projects/mundane-redstone-ore
+Downloads will be located on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mundane-redstone-ore)
