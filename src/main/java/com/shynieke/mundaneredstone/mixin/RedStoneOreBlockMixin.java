@@ -27,7 +27,7 @@ public class RedStoneOreBlockMixin extends Block {
 	}
 
 	@Inject(at = @At("HEAD"), method = "use", cancellable = true)
-	public void use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult blockHitResult, CallbackInfoReturnable<InteractionResult> info) {
+	public void use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result, CallbackInfoReturnable<InteractionResult> info) {
 		info.setReturnValue(InteractionResult.PASS);
 	}
 
