@@ -24,18 +24,18 @@ public class RedStoneOreBlockMixin extends Block {
 	}
 
 	@Inject(at = @At("HEAD"), method = "interact", cancellable = true)
-	private static void interact(BlockState state, Level level, BlockPos pos, CallbackInfo info) {
+	private static void mundaneredstone$interact(BlockState state, Level level, BlockPos pos, CallbackInfo info) {
 		info.cancel();
 	}
 
 	@Inject(at = @At("HEAD"), method = "useItemOn(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lnet/minecraft/world/phys/BlockHitResult;)Lnet/minecraft/world/ItemInteractionResult;", cancellable = true)
-	public void use(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand,
+	public void mundaneredstone$use(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand,
 	                BlockHitResult result, CallbackInfoReturnable<ItemInteractionResult> info) {
 		info.setReturnValue(ItemInteractionResult.SUCCESS);
 	}
 
 	@Inject(at = @At("HEAD"), method = "spawnParticles", cancellable = true)
-	private static void spawnParticles(Level level, BlockPos pos, CallbackInfo info) {
+	private static void mundaneredstone$spawnParticles(Level level, BlockPos pos, CallbackInfo info) {
 		info.cancel();
 	}
 }
