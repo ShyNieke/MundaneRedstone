@@ -22,7 +22,7 @@ public class RedStoneOreBlockMixin extends Block {
 		super(properties);
 	}
 
-	@Inject(at = @At("HEAD"), method = "interact", cancellable = true)
+	@Inject(at = @At("HEAD"), method = "interact(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V", cancellable = true)
 	private static void mundaneredstone$interact(BlockState state, Level level, BlockPos pos, CallbackInfo info) {
 		info.cancel();
 	}
@@ -33,7 +33,7 @@ public class RedStoneOreBlockMixin extends Block {
 		info.setReturnValue(InteractionResult.PASS);
 	}
 
-	@Inject(at = @At("HEAD"), method = "spawnParticles", cancellable = true)
+	@Inject(at = @At("HEAD"), method = "spawnParticles(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V", cancellable = true)
 	private static void mundaneredstone$spawnParticles(Level level, BlockPos pos, CallbackInfo info) {
 		info.cancel();
 	}
